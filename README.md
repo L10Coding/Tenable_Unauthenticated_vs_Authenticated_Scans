@@ -3,6 +3,11 @@ Project that performs both Unauthenticated and Authenticated vulnerability scans
 
 This vulnerability scan was conducted on a Windows 11 VM within Azure.
 
+📝 **Unauthenticated scans** allow us to assess vulnerabilities from an outsider's perspective: able to see some, but not able to see deep, system specific vulns.  They are much faster but can miss local issues.
+
+📝 **Authenticated scans** allow us to see much deeper, since we're providing admin credentials, the scan is able to see much more! Authenticated scans can take longer, but provide a more accurate view of system vulnerabilities and should be prioritized in enterprise environments.
+
+
 ---
 
 ## ⚙️ Technology Utilized
@@ -105,6 +110,8 @@ This vulnerability scan was conducted on a Windows 11 VM within Azure.
 
 ✅ **Authenticated Scan Results:**  
 
+<img width="1000" height="800" alt="authenticated scan results" src="VM Labs - Images/Authenticated Scan Running.png"/> 
+<img width="1000" height="800" alt="authenticated scan executive summary results" src="VM Labs - Images/Authenticated Scan Running.png"/> 
 
 ---
 
@@ -112,10 +119,8 @@ This vulnerability scan was conducted on a Windows 11 VM within Azure.
 **Mock discussion to plan the next steps:**
 
 > **L10 (Security Engineer):** Hey team, I ran the unauthenticated scan on the VM and got four medium vulnerabilities, mostly around TLS and SSL. Ran the authenticated scan and got...  
-> **John (SysAdmin):** Awesome, thanks! Lets prioritize That’s expected—no credentials means we miss local issues.  
-> **Felipe:** Exactly. After enabling authenticated scans, I found 1 critical, 5 high, and 19 medium vulnerabilities.  
-> **John:** Let’s prioritize critical and high findings for the next CAB meeting.  
-> **Felipe:** Agreed! I’ll prepare a remediation plan for those.  
+> **Carlos (SysAdmin):** Awesome, thanks! Lets prioritize critical and high findings for the next CAB meeting.   
+> **L10:** Sounds good! I’ll prepare a remediation plan for those.  
 
 ---
 
@@ -124,11 +129,10 @@ This vulnerability scan was conducted on a Windows 11 VM within Azure.
 |------------------------------|----------------------|--------------------|
 | Critical Vulnerabilities     | 0                    | 1                  |
 | High Vulnerabilities         | 0                    | 5                  |
-| Medium Vulnerabilities       | 6                    | 19                 |
+| Medium Vulnerabilities       | 4                    | 19                 |
 | Low Vulnerabilities          | 1                    | 3                  |
-| Info/Low-Level Findings      | 29                   | 136                |
-| **Total Vulnerabilities**    | 36                   | 164                |
+| Info/Low-Level Findings      | 41                   | 136                |
+| **Total Vulnerabilities**    | 46                   | 164                |
 
-Authenticated scans provide a more accurate view of system vulnerabilities and should be prioritized in enterprise environments.
 
 ---
