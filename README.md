@@ -43,7 +43,21 @@ This vulnerability scan was conducted on a Windows 11 VM within Azure.
 ---
 
 ## 📝 Phase 2: Unauthenticated Scan
-✅ **Scan Setup in Tenable:**  
+✅ **Setting up Unauthenticated Scan in Tenable:**  
+
+<img width="1000" height="800" alt="Setting up unauthenticated scan" src="VM Labs - Images/Creating Scan in Tenable.png"/> 
+
+✅ **Configuring scan settings**  
+
+<img width="1000" height="800" alt="Setting up unauthenticated scan" src="VM Labs - Images/Setting up Scan Settings.png"/> 
+
+✅ **Configuring the Discovery setting to ensure pinging and fast network discovery are enbled:**
+
+<img width="1000" height="800" alt="Setting up unauthenticated scan" src="VM Labs - Images/Setting up Scan Settings 2.png"/> 
+
+
+
+
 ![4- Creating a Basic Scan in Tenable](https://github.com/user-attachments/assets/e65efcf7-e47d-4ac7-b62e-dd21c48279e4)
  ![5- Editing the Unauthenticated Scan for a Internal Scan](https://github.com/user-attachments/assets/ca9433b0-0f77-4ce8-b5f8-5a474f42c62a)
   ![6- Targeting the private IP from the VM](https://github.com/user-attachments/assets/5de6cb22-f2f5-4bff-afd5-50737229dd09)
