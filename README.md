@@ -110,15 +110,18 @@ This vulnerability scan was conducted on a Windows 11 VM within Azure.
 
 ✅ **Authenticated Scan Results:**  
 
-<img width="1000" height="800" alt="authenticated scan results" src="VM Labs - Images/Authenticated Scan Running.png"/> 
-<img width="1000" height="800" alt="authenticated scan executive summary results" src="VM Labs - Images/Authenticated Scan Running.png"/> 
+<img width="1000" height="800" alt="authenticated scan results" src="VM Labs - Images/Authenticated Scan Results.png"/> 
+
+✅ **Exported Executive Summary Scan Results:**  
+
+<img width="1000" height="800" alt="authenticated scan executive summary results" src="VM Labs - Images/Authenticated Scan Exec Results.png"/> 
 
 ---
 
 ## 💬 Group Meeting Chat
 **Mock discussion to plan the next steps:**
 
-> **L10 (Security Engineer):** Hey team, I ran the unauthenticated scan on the VM and got four medium vulnerabilities, mostly around TLS and SSL. Ran the authenticated scan and got...  
+> **L10 (Security Engineer):** Hey team, I ran the unauthenticated scan on the VM and got four medium vulnerabilities, mostly around TLS and SSL. Ran the authenticated scan and got one critical, seven high and 9 medium vulnerabilities.  
 > **Carlos (SysAdmin):** Awesome, thanks! Lets prioritize critical and high findings for the next CAB meeting.   
 > **L10:** Sounds good! I’ll prepare a remediation plan for those.  
 
@@ -128,10 +131,10 @@ This vulnerability scan was conducted on a Windows 11 VM within Azure.
 | Metric                       | Unauthenticated Scan | Authenticated Scan |
 |------------------------------|----------------------|--------------------|
 | Critical Vulnerabilities     | 0                    | 1                  |
-| High Vulnerabilities         | 0                    | 5                  |
-| Medium Vulnerabilities       | 4                    | 19                 |
-| Low Vulnerabilities          | 1                    | 3                  |
-| Info/Low-Level Findings      | 41                   | 136                |
+| High Vulnerabilities         | 0                    | 7                  |
+| Medium Vulnerabilities       | 4                    | 9                  |
+| Low Vulnerabilities          | 1                    | 2                  |
+| Info/Low-Level Findings      | 41                   | 145                |
 | **Total Vulnerabilities**    | 46                   | 164                |
 
 
