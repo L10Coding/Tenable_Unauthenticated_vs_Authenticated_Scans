@@ -19,8 +19,12 @@ This vulnerability scan was conducted on a Windows 11 VM within Azure.
 
 ## 📝 Phase 1: VM Creation and Environment Setup
 ✅ **Created a Windows 10 VM** in Azure.  
+(replace this screenshot)
 ![Created VM]![1- Created VM Windows 10](https://github.com/user-attachments/assets/2b6ef14b-5b2e-4a85-9918-d00c37218091)
 
+(add in SS showing connection to VM via Bastion)
+
+(add in SS showing turning off Windows Defender Firewalls)
 
 ✅ **Disabled Windows Firewall Inside VM** to allow scanning of internal services.  
 ![Firewall Disabled]![2- Disabled Firewall inisde the VM](https://github.com/user-attachments/assets/21b311a4-bbde-457a-ab61-63ddc67735fc)
